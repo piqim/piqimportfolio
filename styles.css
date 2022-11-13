@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.img {
+    background-image: url(img/bg.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0 100px;
+    background-attachment: fixed;
+}
+
+.black {
+    background-color: #292b2c;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+a {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Sans-serif;
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+
+/* NAV BAR */
+.jotform-icon {
+    background-image: url("img/logos/22.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 70px;
+    transition: all 0.5s;
+}
+
+.jotform-icon:hover {
+    width: 75px;
+    height: 75px;
+}
+
+.nav {
+    width: fit-content;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.nav a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    margin: 0 5px 0 5px;
+    transition: all 0.5s;
+}
+
+.nav a:hover {
+    color: #ff8001;
+    font-size: 22px;
+}
+
+/* HEADER CSS */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title1 {
+    color: #ff8001;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.title2 {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.introduce {
+    color: #ffffffb3;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+/* BUTTONS: GENERAL */
+.button {
+    padding: 12px 17px;
+    border-radius: 5px;
+    border: 0;
+
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+
+    color: #292b2c;
+    background-color: white;
+    font-size: 100%;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #292b2c;
+}
+
+/* TEXTS N TITLES I GUESS???? */
+.title3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.title4 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.icon1-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.icon-description {
+    display: block;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #000000b3;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three-icon {
+    flex: 1;
+    padding: 30px;
+}
+
+.icon-title {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* PAGE 2 STYLE*/
+.sec:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.page2 {
+    text-align: center;
+    padding: 2em 0 2em 0;
+}
+
+/* PAGE 3 STYLE*/
+.page3-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.page3-img {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+
+.information {
+    flex: 1;
+    padding-left: 70px;
+}
+
+button.learn-more {
+    background-color: #292b2c;
+    color: white;
+}
+
+button.slideshow {
+    background-color: #292b2c;
+    color: white;
+    transition: ll 0.5s;
+}
+
+button.slideshow:hover {
+    background-color: #ff8001;
+}
+
+.info-title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info-all {
+    color: #000000b3;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+/* SLIDESHOW CSS */
+.slideshowdiv {
+    width: 300px;
+    border-style: outset;
+    border-radius: 1em;
+}
+
+.slideshow1,
+.slideshow2,
+.slideshow3 {
+    height: 250px;
+    display: none;
+    text-align: center;
+}
+
+/* DIV PADDING FOR TABLE */
+.tablecont {
+    padding: 2em 2em;
+}
+
+/* EXPERIENCE TABLE */
+.table_exp {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_exp td,
+th,
+tr {
+    padding: 5px;
+    border: 2px solid rgb(220, 220, 220);
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #000000b3;
+    font-size: 15px;
+}
+
+.table_exp th{
+    font-weight: bold;
+}
+
+.table_exp tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.table_exp tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+/* EDUCATION TABLE */
+.table_edu {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.table_edu td,
+th,
+tr {
+    padding: 5px;
+    border: 2px solid rgb(220, 220, 220);
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #000000b3;
+    font-size: 15px;
+}
+
+.table_edu th{
+    font-weight: bold;
+}
+
+.table_edu tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.table_edu tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+/* FOOTER */
+.under {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+}
+
+.under .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.copy {
+    font-family: "Work Sans", sans-serif;
+}
+
+.sos-med {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.sos-med div {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook {
+    background-image: url("img/facebook.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 2px;
+}
+
+.ig {
+    background-image: url("img/instagram.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 2px;
+}
+
+.linkedin {
+    background-image: url("img/linkedin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 2px;
+}
+
+/* MOBILE STUFF */
+@media (max-width: 768px) {
+    .information {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .page3-box {
+        justify-content: center;
+    }
+
+    .tablecont {
+        overflow-x: scroll;
+    }
+}
+
+/* I DONT EVEN KNOW WHAT THIS WAS FOR BRO :O
+
+
+.get-free {
+    background-color: #292b2c;
+    color: white;
+}
+
+.memberships {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member {
+    padding: 60px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 4px;
+    margin: 0 10px 0 10px;
+}
+
+span {
+    font-size: 40px;
+}
+
+.mem-title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.orange {
+    background-color: #ff8001;
+    color: white;
+}
+
+.page4 {
+    padding: 80px 0;
+}
+
+*/
