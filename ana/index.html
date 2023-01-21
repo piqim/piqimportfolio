@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana's Section :)</title>
+</head>
+<body>
+    <!-- BEATING HEART ANIMATION-->
+    <a href="info.html">
+        <div class="heart"></div>
+    </a>
+
+</body>
+
+<!-- HEART CSS CODING -->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;   
+        background: #0b1522; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heart {
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px #f20044;
+        animation: heart 0.6s linear infinite;
+    }
+
+    @keyframes heart{
+        0%{
+            transform: rotate(-45deg) scale(1.14);
+        }
+        80%{
+            transform: rotate(-45deg) scale(1.07);
+        }
+    }
+
+    .heart::before{
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        top: -50%;
+        border-radius: 50px;  
+        box-shadow: -10px 10px 90px #f20044;
+    }
+
+    .heart::after{
+        content: 'Clickk Here';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        right: -50%;
+        border-radius: 50px;  
+        box-shadow: -10px 10px 90px #f20044;
+    }
+</style>
+
+</html>
