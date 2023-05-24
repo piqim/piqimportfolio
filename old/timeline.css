@@ -1,0 +1,36 @@
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background:  linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}

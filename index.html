@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Piqim Portfolio</title>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Piqim | Portfolio </title>
+    <meta name="description" content="Welcome to Piqim's personal portfolio website where he is hopeful for the future.">
+    <meta name="author" content="Piqim">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
+     <!-- METAS for SEOS
+    ================================================== -->
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
@@ -21,365 +36,802 @@
     <meta property="og:url" content="http://www.piqim.com/" />
     <meta property="og:type" content="website" />
 
-    <meta name="description" content="Welcome to my personal site where you can find all my achievements and my contacts!" />
-    <meta name="author" content="Piqim and Bootstrap" />
     <meta name="generator" content="Piqim Portfolio" />
     <meta name="robots" content="index, about, work, world, kyuem" />
-    <meta name="keywords" content="base, scholars, scholarship, khazanah, petronas, bank negara, BASE Initiative, help, student, jpa, mara, biasiswa, spm, sijil pelajaran malaysia, malaysia, afterschool, kpm, pendidikan, khazanah, 9A+. 10A+, straight A, straight A's, tiktok spm, zaim qhodi, anwar ibrahim, kyuem, news, berita, berita, kolej yayasan uem, qiab, alevels, cambridge, oxford, lembah beringin, tanjung malim"/>
-
+    <meta name="keywords"
+        content="base, scholars, scholarship, khazanah, petronas, bank negara, BASE Initiative, help, student, jpa, mara, biasiswa, spm, sijil pelajaran malaysia, malaysia, afterschool, kpm, pendidikan, khazanah, 9A+. 10A+, straight A, straight A's, tiktok spm, zaim qhodi, anwar ibrahim, kyuem, news, berita, berita, kolej yayasan uem, qiab, alevels, cambridge, oxford, lembah beringin, tanjung malim" />
 
     <meta itemprop="name" content="About Me — Mustaqim" />
     <meta itemprop="url" content="http://www.piqim.com/" />
     <meta name="twitter:title" content="About Me — Mustaqim" />
     <meta name="twitter:url" content="http://www.piqim.com/" />
     <meta name="twitter:card" content="summary" />
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon_n.ico" type="image/x-icon">
+    <link rel="icon" href="images/n_favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <!--kit font-awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/82318df663.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"
+        integrity="sha256-EPrkNjGEmCWyazb3A/Epj+W7Qm2pB9vnfXw+X6LImPM=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="top">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="#"><img src="images/Piqim Logo.png" alt="Homepage"></a>
+        </div>
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                <li><a class="smoothscroll" href="#portfolio" title="Portfolio">Portfolio</a></li>
+                <li><a class="smoothscroll" href="#projects" title="Projects">Projects</a></li>
+                <li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header> <!-- end s-header -->
 
-    <!--HOME / NAVIGATOR-->
-    <div class="img">
-        <div class="container">
-            <div class="header">
-
-                <div class="jotform-icon"></div>
-                <div class="nav">
-                    <a href="index.html">Home</a>
-                    <a href="index.html#about">About</a>
-                    <a href="index.html#work">Work</a>
-                    <a href="notes.html">Notes</a>
+    <!-- home
+   ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
+        data-image-src="images/mountainme.jpg" data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main">
+                <p>Welcome</p>
+                 <h1>
+                    My name's Piqim, I love Coding and Playing.
+                </h1>
+                <div class="home-content__buttons">
+                    <a href="#portfolio" class="smoothscroll btn btn--stroke">
+                        Portfolio
+                    </a>
+                    <a href="#projects" class="smoothscroll btn btn--stroke">
+                        Projects
+                    </a>
                 </div>
-
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
             </div>
-            <div class="start">
-                <h2 class="title1"> My Portfolio Website Testing Github</h2>
-                <h1 class="title2">Mustaqim Burhanuddin <br>(Piqim)</h1>
-                <h3 class="introduce"> I am a College Student; <br>Who loves all things coding.</h3>
-                <br>
-                <a class="button" href="RESUME - MUSTAQIM BIN BURHANUDDIN.pdf"download>Download CV</a>
+        </div> <!-- end home-content -->
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/mustaqim.burhanuddin" target="_blank"><i class="fab fa-facebook"
+                        aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/piqim_/" target="_blank"><i class="im im-instagram"
+                    aria-hidden="true"></i><span>Instagram</span></a>
+                </li>
+            <li>
+                <a href="https://www.github.com/piqim/" target="_blank"><i class="fab fa-github"
+                aria-hidden="true"></i><span>Github</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mustaqim-burhanuddin-243513239/" target="_blank"><i class="fab fa-linkedin"
+                        aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+    </section> <!-- end s-home -->
+    
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h2>About</h2>
+                <p class="lead">
+                    Mustaqim, also known as Piqim, a devoted computer science enthusiast and a current A-level student at Kolej Yayasan UEM. 
+                    My unwavering passion for technology has fueled my ambition to pursue a career in the field of computer science.
+                </p>
             </div>
         </div>
-    </div>
+        <div class="row about-content">
+            <div class="col-six tab-full left">
+                <h3 id="welcome">W E L C O M E</h3>
+                <p id="content_tgh">Here are some useful informations that can assist your curious minds.
+                </p>
+                <p class="information_tgh">What is this site?</p>
+                An online portfolio of me.
+                <p class="information_tgh">Who is this site for?</p>
+                Everyone is welcomed!
+                <p class="information_tgh">What else do you enjoy to do?</p>
+                Badminton, listening to music and eating.
+                <p class="information_tgh">What is the meaning of life?</p>
+                I heard it's only 42!
+                <p class="information_tgh">What are your future plans?</p>
+                Pursuing a career in Computer Science, specifically in Cybersecurity.
+                </p>
+                
+                
+            </div>
+            <div class="col-six tab-full right">
+                <p class="h03">Skillset:</p>
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent85"><span>85%</span></div>
+                        <strong>HTML5 and CSS3</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent55"><span>55%</span></div>
+                        <strong>JavaScript</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent70"><span>70%</span></div>
+                        <strong>MySQL</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent70"><span>70%</span></div>
+                        <strong>PHP</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent60"><span>60%</span></div>
+                        <strong>Java</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent45"><span>45%</span></div>
+                        <strong>C++</strong>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- end about-content -->
+        <div class="row about-content about-content--buttons">
+            <div class="col-six tab-full left">
+                <a href="https://drive.google.com/drive/folders/1XQc818NOu9bw32jiPgFcFtIM9aCmRSor?usp=sharing"
+                    target="_blank" class="btn btn--primary full-width">Take a look at my CV</a>
+            </div>
+            <div class="col-six tab-full right">
+                <a href="https://www.kyuem.edu.my/" target="_blank" class="btn full-width">My college</a>
+            </div>
+        </div> <!-- end about-content buttons -->
+        
+        
+    </section> <!-- end about -->
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-works target-section">
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h2 class="red bold">Portfolio</h2>
+                <p class="lead">These are a few achievements,awards and moments in my life that
+                    I cherise.I'm hoping to improve more on the future, joining higher global and national Level
+                    of competitions.Enjoy my hall of fame.</p>
+            </div>
+        </div>
+        <div class="row masonry-wrap">
+            <div class="masonry">
 
-    <!--ABOUT ME-->
-    <section class="sec" id="about">
-        <div class="page3">
-            <div class="container">
-                <div class="page3-box">
-                    <img class="page3-img" src="img/img1-nobg.png"></img>
-                    <div class="information">
-                        <div class="info-title">About Me</div>
-                        <br>
-                        <div class="info-all">
-                            <p>I am a bold student who likes Cats, Computer Science, Mathematics and teamwork. I was
-                                born in Malaysia on the 28th of June 2004 and I hail from the far eastern shores of
-                                Kelantan. I have done multiple types of work such as building a quiz system as well as
-                                writing a handful of revision books. If you are interested in them, you may enquire me
-                                through my contacts page. I also have a small passion for videography and I have created
-                                a number of Youtube videos to further expand my passion in videography of which can be
-                                watched in my Youtube channel.</p>
-                            <p>Currently a proud student of KYUEM under the Yayasan Khazanah Scholarship. At the moment
-                                I am undergoing a 2 years program for A-Levels.</p>
+                <!-- KERIS -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/keris.JPG" class="thumb-link" data-size="1024x768">
+                                <img src="images/portfolio/keris.JPG"
+                                    srcset="images/portfolio/keris.JPG 1x, images/portfolio/keris.JPG 2x"
+                                    alt="Piqim in a meeting for KERIS">
+                                <span class="shadow-overlay"></span>
+                            </a>
                         </div>
-                        <button class="button learn-more">Learn More</button>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                Kelantan Education Resource Initiative for Students (KERIS)
+                            </p>
+                            <p class="item-folio__cat">
+                                Founder and Co-Director
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p>	Created the website and plan to have an event soon in June 2023. The body itself provide scholarship resources and opportunities to rural Kelantan Students who deserve scholarships</p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <!-- WEB DEVELOPMENT` CLASS -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/webclass.jpg" class="thumb-link"
+                                title="Web Development Class" data-size="1024x768">
+                                <img src="images/portfolio/webclass.jpg"
+                                    srcset="images/portfolio/webclass.jpg 1x, images/portfolio/webclass.jpg 2x" alt="Piqim Teaching Web Development Class">
+                                <span class=" shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                Web Development Class for Students
+                            </p>
+                            <p class="item-folio__cat">
+                                Teacher for the Class
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>	Taught the basics and some intermediate knowledge regarding HTML, CSS and JS that focused the teaching syllabus on to make a personal portfolio website for KYUEM students.</p>
+                        </div>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                 <!-- YAYASAN KHAZANAH SCHOLARSHIP HOLDER -->
+                 <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/yk.jpg" class="thumb-link" data-size="768x1028">
+                                <img src="images/portfolio/yk.jpg"
+                                    srcset="images/portfolio/yk.jpg 1x, images/portfolio/yk.jpg 2x"
+                                    alt="Piqim receiving the Yayasan Khazanah Global Scholarship">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                Yayasan Khazanah Scholarship
+                            </p>
+                            <p class="item-folio__cat">
+                                Scholar
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p>Received the YK Global Scholarship to further studies in the US or UK after partaking in A-Levels examination at Kolej Yayasan UEM for 2 years.</p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <!-- MUSCOM OUTREACH -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/muscom.JPG" class="thumb-link" title="MUSCOM OUTREACH"
+                                data-size="1024x768">
+                                <img src="images/portfolio/muscom.JPG"
+                                    srcset="images/portfolio/muscom.JPG 1x, images/portfolio/muscom.JPG 2x"
+                                    alt="Piqim participation's in Muscom Outreach Program">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                               MUSCOM KYUEM Outreach Camp
+                            </p>
+                            <p class="item-folio__cat">
+                                Participant of the Camp
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Assisted the flood victims in Rantau Panjang by distributing goods and also carried out cleaning works of the local mosque.
+                            </p>
+                        </div>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                 <!-- Badminton -->
+                 <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/bad.jpg" class="thumb-link" data-size="768x1024">
+                                <img src="images/portfolio/bad.JPG"
+                                    srcset="images/portfolio/bad.JPG 1x, images/portfolio/bad.JPG 2x"
+                                    alt="Piqim playing badminton for College House">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                College Badminton Tournament
+                            </p>
+                            <p class="item-folio__cat">
+                                Player
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p> Won Third Place in Team event and
+                                made it to quarter finals in individual events playing in Mixed Doubles</p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <!-- PSG Multimedia Exco -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/psg.jpg" class="thumb-link" data-size="768x1024">
+                                <img src="images/portfolio/psg.jpg"
+                                    srcset="images/portfolio/psg.jpg 1x, images/portfolio/psg.jpg 2x"
+                                    alt="Piqim as PSG Multimedia Exco">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                Peer Support Group Multimedia Exco
+                            </p>
+                            <p class="item-folio__cat">
+                                Hicom Member
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p>	Became the multimedia exco for a club that focuses on mental health and wellbeing of students and is responsible to change the club's public and social media presence in Instagram, Tiktok and so on.</p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <!--DIKIR BARAT-->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/dikir.jpg" class="thumb-link" data-size="1024x768">
+                                <img src="images/portfolio/dikir.jpg"
+                                    srcset="images/portfolio/dikir.jpg 1x, images/portfolio/dikir.jpg 2x"
+                                    alt="Piqim participation in Malay Cultural Night for Dikir Barat">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                Malay Cultural Night 2023
+                            </p>
+                            <p class="item-folio__cat">
+                                Performer
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p>Performed Dikir Barat at the Malay Cultural Night Semester Dinner as a fun effort to promote Kelantan culture and music.</p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                 <!-- LOCAL Badminton Tourney in 2021 -->
+                 <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/bachokbad.jpg" class="thumb-link" data-size="1024x768">
+                                <img src="images/portfolio/bachokbad.PNG"
+                                    srcset="images/portfolio/bachokbad.PNG 1x, images/portfolio/bachokbad.PNG 2x"
+                                    alt="Piqim playing badminton with his partner">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                Local Bachok Badminton Tournament
+                            </p>
+                            <p class="item-folio__cat">
+                                Player
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p>Participated with a friend to play in Men's Double, made it into the round of 32.</p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <!-- SPM ; SCHOOL ACHIEVER -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/spm.JPG" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/spm.JPG"
+                                    srcset="images/portfolio/spm.JPG 1x, images/portfolio/spm.JPG 2x"
+                                    alt="Piqim receiving SPM Results">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item-folio__text">
+                            <p class="h03 item-folio__title">
+                                SMK Bachok Top Achiever Award
+                            </p>
+                            <p class="item-folio__cat">
+                                Highest SPM Result and Academic Reward
+                            </p>
+                        </div>
+                        <span class="item-folio__caption">
+                            <p>Received the award in June of 2022 during SPM results day. Achieved 9A+ and 1A which is the best result in the school's history.
+                            </p>
+                        </span>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+            </div>
+        </div> <!-- end masonry -->
+    </section> <!-- end works -->
+
+
+    <script> /*
+    <!-- future target and plans
+    ================================================== -->
+    <div class="s-testimonials">
+        <div class="overlay"></div>
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h2 class="h02 bold" style="color: white;">Future Targets and Plans</h2>
+            </div>
+        </div>
+        <div class="row testimonials">
+            <div class="col-full testimonials__slider">
+                <div class="testimonials__slide">
+                    <img src="images/avatars/gold.jpg" alt="Programme image" class="testimonials__avatar">
+                    <p>To achieve this prestigious award, I must complete <strong class="testimony">all five sections</strong> which are
+                        Service, Physical Recreation, Skills, Adventurous Journey and
+                            Residential Project. This award can be completed
+                        with minimum 18 months of participation and over 16 years old.</p>
+                    <div class="testimonials__author h06">
+                        The Duke of Edinburgh Award (Gold)
+                        <span>Awards </span>
                     </div>
                 </div>
+                <div class="testimonials__slide">
+                    <img src="images/avatars/genius.png" alt="Programme image" class="testimonials__avatar">
+                    <p><span class="testimony">GENIUS Olympiad</span> is an <span class="testimony">international high
+                            school project competition</span> about environmental issues.
+                        It hosts projects in several disciplines with an environmental focus.
+                        The disciplines includes <span class="testimony">science, robotics and arts</span>.
+                        I'm aiming to participate in it by the year of 2021.
+                    </p>
+                    <div class="testimonials__author h06">
+                        GENIUS Olympiad
+                        <span>Olympiads</span>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <img src="images/avatars/bctl.png" alt="Programme image" class="testimonials__avatar">
+                    <p>The <span class="testimony">BEAVER Competition</span> is a Malaysian,online <span
+                            class="testimony">computational thinking and informatics contest.</span>
+                        Being 18 this year, this would be my last chance to try and achieve something great in this
+                        contest.</p>
+                    <div class="testimonials__author h06">
+                        Beaver Computational Thinking Competition
+                        <span>Competitions</span>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <img src="images/avatars/myeso.png" alt="Programme image" class="testimonials__avatar">
+                    <p>MyESO stands for <span class="testimony">Malaysia Earth Science Olympiad.</span> I've entered the
+                        olympiad in 2018,
+                        and got selected until the <span class="testimony">Final Round</span>. I would love to enter it
+                        again this year, and I hope
+                        to succeed at the highest level possible.</p>
+                    <div class="testimonials__author h06">
+                        MyESO
+                        <span>Olympiads</span>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <img src="images/avatars/wwd.jpg" alt="Programme image" class="testimonials__avatar">
+                    <p>Volunteering is a great way to <span class="testimony">improve interpersonal skills</span> and
+                        <span class="testimony">add new abilities</span> that will
+                        help in achieving our goals. With that being said, I would like to involve more in volunteering
+                        with
+                        NGOs such as <span class="testimony">WWF Malaysia,Free Tree Society,Zero Waste Malaysia</span>
+                        and other NGOs. All in all,
+                        this would help in creating a more harmonious society in our country.</p>
+                    <div class="testimonials__author h06">
+                        Volunteering
+                        <span>Programmes</span>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <img src="images/avatars/expo.png" alt="Programme image" class="testimonials__avatar">
+                    <p>Joining large,national technology expo would open up my mind thus <span
+                            class="testimony">providing a clearer and wider point of views</span>
+                        towards the country technological advancements and plans. Besides, it would also assist me in
+                        <span class="testimony">preparing a clearer
+                            pathway</span> towards my future career and plans.</p>
+                    <div class="testimonials__author h06">
+                        Tech Expo's
+                        <span>Programmes</span>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <img src="images/avatars/mcc.jpg" alt="Programme image" class="testimonials__avatar">
+                    <p><span class="testimony">Malaysia Computing Challenge</span> is a computational online competition
+                        designed to <span class="testimony">evaluate participant's computational thinking
+                            abilities</span>.
+                        An excellent result in the challenge would assist in <span class="testimony">joining the
+                            Malaysia Computing Olympiad</span>, which is participated
+                        by invitation-only from participants with high results from the MCC. I'm planning to enter the
+                        competition by 2021.</p>
+                    <div class="testimonials__author h06">
+                        MCC
+                        <span>Competition</span>
+                    </div>
+                </div>
+            </div> <!-- end testimonials__slider -->
+        </div> <!-- end testimonials -->
+    </div> <!-- end s-target and plans -->
+    */
+    </script>
+
+
+    <!-- works and project
+    ================================================== -->
+    <section id="blog" class="s-blog target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <p class="red bold h02">Projects</p>
+                <p class="lead">
+                    This is my coding journey, learning and building things along the way.<br>
+                    Consists of some of my big projects that I have made to improve my skills. Smaller projects can be seen at my Github profile. 😁
+                </p>
             </div>
         </div>
-    </section>
 
-    <!-- WORK-->
-    <section class="sec" id="work">
-        <div class="page2">
-            <div class="container">
-                <h2 class="title3">My Work</h2>
-                <div class="icon-list">
-                    <div class="three-icon">
-                        <!-- SLIDESHOW: 1 REVISION BOOKS-->
-                        <center>
-                            <div class="slideshowdiv">
-                                <img class="slideshow1" src="img/work/kimia-konsep/kimia-1.jpg">
-                                <img class="slideshow1" src="img/work/fizik-konsep/fizik-1.jpg">
-                                <img class="slideshow1" src="img/work/fizik-answers/1.jpg">
+        <div class="row blog-content">
+            <div class="col-full">
+
+                <div class="blog-list block block-tab-full">
+                    <article class="col-block" style="justify-content:center">
+
+                        <!-- BASE -->
+                        <div class="blog-date">
+                            <a href="">December 2022</a>
+                        </div>
+
+                        <p class="h01 blog-cat"><a href="https://baseinitiativemy.com/">BASE Website</a></p>
+                        <p>
+                            This website was originally created by <a href="https://irfanezani.com/" target="_blank">Irfan Ezani</a> for BASE Initiative, 
+                            I work as the current IT Officer to further improve the website
+                        </p>
+
+                        <div class="col-twelve tab-full center">
+                            <a href="https://baseinitiativemy.com/" target="_blank" class="btn full-width">Visit the Site</a>
+                        </div>
+
+                        <div class="divider" style="color:white; margin: 4rem;">
+                            divide things up.
+                        </div>
+
+                        <!-- KY NEWS -->
+                        <div class="blog-date">
+                            <a href="">December 2022</a>
+                        </div>
+
+                        <p class="h01 blog-cat"><a href="https://github.com/piqim/kynews">Kyuem Noticias Website</a>
+                        </p>
+                        <p>
+                           Coded a fully dynamic news website for the college's Journalism club using MySQL, HTML, PHP and other languages to make it fully functional.
+                        </p>
+
+
+                        <div class="col-twelve tab-full center">
+                            <a href="https://github.com/piqim/kynews" target="_blank"
+                                class="btn full-width">Source Code</a>
+                        </div>
+
+                        <div class="divider" style="color:white; margin: 4rem;">
+                            divide things up.
+                        </div>
+
+                        <!-- KYSC Website -->
+                        <div class="blog-date">
+                            <a href="">February 2023</a>
+                        </div>
+
+                        <p class="h01 blog-cat"><a href="https://piqim.github.io/kycs/">KYUEM Computing Society Website</a></p>
+                        <p>
+                            Made a simple demo website for the College Computing society.
+                        </p>
+
+
+                        <div class="col-twelve tab-full center">
+                            <a href="https://piqim.github.io/kycs/" target="_blank" class="btn full-width">Check it Out</a>
+                        </div>
+
+
+                        <div class="divider" style="color:white; margin: 4rem;">
+                            divide things up.
+                        </div>
+
+                        <!-- KYSC Website -->
+                        <div class="blog-date">
+                            <a href="">March 2023</a>
+                        </div>
+
+                        <p class="h01 blog-cat"><a href="https://github.com/piqim/kysc">College Student Council Website</a>
+                        </p>
+                        <p>
+                            Designed and coded a fully dynamic web system for the college's student council as a mock-up and demo.
+                        </p>
+
+
+                        <div class="col-twelve tab-full center">
+                            <a href="https://github.com/piqim/kysc" target="_blank"
+                                class="btn full-width">Source Code</a>
+                        </div>
+
+                        <div class="divider" style="color:white; margin: 4rem;">
+                            divide things up.
+                        </div>
+
+                        <!-- KY Acad Drive -->
+                        <div class="blog-date">
+                            <a href="">March 2023</a>
+                        </div>
+
+                        <p class="h01 blog-cat"><a href="https://piqim.github.io/acadsite/">Academic Drive Access Point</a>
+                        </p>
+                        <p>
+                            Made a simple access point for KYUEM students to access a google drive folder that contains resources to assist them for A-Levels.
+                        </p>
+
+
+                        <div class="col-twelve tab-full center">
+                            <a href="https://piqim.github.io/acadsite/" target="_blank"
+                                class="btn full-width">Take a Peek</a>
+                        </div>
+
+                        <div class="divider" style="color:white; margin: 4rem;">
+                            divide things up.
+                        </div>
+
+                        </article>
+                </div> <!-- end blog-list -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end blog-content -->
+
+    </section> <!-- end s-blog -->
+
+
+    <!-- cool statistics
+    ================================================== -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    3900
+                </div>
+                <h4>Lines of Code</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    365
+                </div>
+                <h4>Days in a Year</h4>
+            </div>
+            <div class="col-block stats__col stats__col--highlight">
+                <div class="stats__upsign">
+                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="stats__count">
+                    100
+                </div>
+                <h4>Persistence</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    4
+                </div>
+                <h4>Rackets Broken</h4>
+            </div>
+        </div>
+    </section> <!-- end s-stats -->
+
+    <!-- contact me
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+        <div class="overlay"></div>
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <p class="h01 bold">Contact</p>
+                <p class="h03">Say Hello.</p>
+            </div>
+        </div>
+        <div class="row contact__main">
+            <div class="col-twelve tab-full contact__infos">
+                <p class="h06">Phone</p>
+                <p>+60 10 454 2089<br>
+                </p>
+                <p class="h06">Email</p>
+                <p>peeqim@gmail.com<br>
+                </p>
+                <p class="h06">Address</p>
+                <p>
+                    288 Bandar Bachok,<br>
+                    16300 MY
+                </p>
+            </div>
+        </div>
+    </section> <!-- end s-contact -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="images/Piqim Logo.png" alt="Homepage"></a>
+                </div>
+                <ul class="footer-social">
+                    <li><a href="https://www.facebook.com/mustaqim.burhanuddin" target="blank">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/piqim_/" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a></li>
+                    <li><a href="https://github.com/piqim/">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span>Github</span>
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/mustaqim-burhanuddin-243513239/" target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn</span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    I'm Piqim.
+                    This is my personal page.
+                </div>
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div> <!-- end footer-bottom -->
+    </footer> <!-- end footer -->
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
                             </div>
-                        </center>
-                        <!-- JS for SLIDESHOW 1-->
-                        <script type="text/javascript" src="slideshow1.js"></script>
-                        <!-- CONTROL BUTTONS -->
-                        <div style="margin: 1em 0 0.5em 0;">
-                            <button class="button slideshow" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="button slideshow" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                        <h3 class="icon-title"> SPM Revision Books</h3>
-                        <div class="icon-description">
-                            <p>The books are only available in Malay and covers either the FORM 4 or FORM 5 KSSM topics.
-                                Contact me for more information</p>
-                        </div>
-                    </div>
-
-                    <div class="three-icon">
-                        <!-- SLIDESHOW: 2 WEB DEV-->
-                        <center>
-                            <div class="slideshowdiv">
-                                <img class="slideshow2" src="img/work/web-dev/1.JPG">
-                                <img class="slideshow2" src="img/work/web-dev/2.JPG">
-                                <img class="slideshow2" src="img/work/web-dev/3.JPG">
-                                <img class="slideshow2" src="img/work/web-dev/4.JPG">
-                            </div>
-                        </center>
-                        <!-- JS for SLIDESHOW 2-->
-                        <script type="text/javascript" src="slideshow2.js"></script>
-                        <!-- CONTROL BUTTONS -->
-                        <div style="margin: 1em 0 0.5em 0;">
-                            <button class="button slideshow" onclick="plusDivs1(-1)">&#10094;</button>
-                            <button class="button slideshow" onclick="plusDivs1(1)">&#10095;</button>
-                        </div>
-
-                        <h3 class="icon-title">Web Development</h3>
-                        <div class="icon-description">
-                            <p>I have experience creating different types of portfolio websites as well as managing
-                                complex websites with intricate database systems.</p>
-                        </div>
-                    </div>
-
-                    <div class="three-icon">
-                        <center>
-                            <div class="slideshowdiv">
-                                <img class="slideshow3" src="img/work/notes/1.jpg">
-                                <img class="slideshow3" src="img/work/notes/2.jpg">
-                                <img class="slideshow3" src="img/work/notes/3.jpg">
-                                <img class="slideshow3" src="img/work/notes/4.jpg">
-                            </div>
-                        </center>
-                        <!-- JS for SLIDESHOW 3-->
-                        <script type="text/javascript" src="slideshow3.js"></script>
-                        <!-- CONTROL BUTTONS -->
-                        <div style="margin: 1em 0 0.5em 0;">
-                            <button class="button slideshow" onclick="plusDivs2(-1)">&#10094;</button>
-                            <button class="button slideshow" onclick="plusDivs2(1)">&#10095;</button>
-                        </div>
-
-                        <h3 class="icon-title">KYUEM Subject Notes</h3>
-                        <div class="icon-description">
-                            <p>I will be updating this list once a week; In case I forget to update, you may contact me
-                                directly (Especially KYUEM Students)</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!--MY EXPERIENCE-->
-    <section class="sec" id="exp">
-        <div class="page2">
-            <div class="container">
-                <h2 class="title3">My Experience</h2>
-                <div class="tablecont">
-
-                    <!--TABLE FOR EDUCATION-->
-                    <table class="table_exp">
-                        <tr>
-                            <th>Institution</th>
-                            <th>Position</th>
-                            <th>Year</th>
-                            <th>Contribution</th>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Kolej Yayasan UEM</td>
-                            <td>Active Member of KY Computing Society</td>
-                            <td>2022</td>
-                            <td>Facilitated a Beginner's Website Development 101 Class for students of the college</td>
-                        </tr>
-                        <tr>
-                            <td>IT Specialist of BASE INITIATIVE</td>
-                            <td>2022</td>
-                            <td>Oversee and Administrate the official website of the organisation</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="4">SMK Bachok</td>
-                            <td>Head Student</td>
-                            <td>2021-2022</td>
-                            <td>A head member of the Student Disciplinary Board</td>
-                        </tr>
-                        <tr>
-                            <td>President of Young Doctor's Club</td>
-                            <td>2021-2022</td>
-                            <td>Champion in "PERTANDINGAN PENGHASILAN
-                                VIDEO PENDEK KEMPEN KESEDARAN COVID 19
-                                PERINGKAT NEGERI KELANTAN 2020"</td>
-                        </tr>
-                        <tr>
-                            <td>President of KOR Kadet Polis</td>
-                            <td>2021-2022</td>
-                            <td>Second Runner-Up in "PERTANDINGAN KAWAD
-                                KAKI UNIT BERUNIFORM PERINGKAT SEKOLAH"</td>
-                        </tr>
-                        <tr>
-                            <td>President of Volleyball Club</td>
-                            <td>2021-2022</td>
-                            <td>Champion in "PERTANDINGAN PERLAWANAN BOLA
-                                TAMPAR RUMAH SUKAN PERINGKAT SEKOLAH"</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">SMK Sri Nipah</td>
-                            <td>School Prefect</td>
-                            <td>2017-2019</td>
-                            <td>An active member</td>
-                        </tr>
-                        <tr>
-                            <td>Active Member of Road Safety Club</td>
-                            <td>2017-2019</td>
-                            <td>Runner-Up in "PERTANDINGAN DRAMA BAHASA
-                                INGGERIS PERINGKAT NEGERI KELANTAN TAHUN
-                                2019</td>
-                        </tr>
-                    </table>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!--MY EXPERIENCE-->
-    <section class="sec" id="exp">
-        <div class="page2">
-            <div class="container">
-                <h2 class="title3">My Education</h2>
-                <div class="tablecont">
-
-                    <!--TABLE FOR EDUCATION-->
-                    <table class="table_edu">
-                        <tr>
-                          <th>Institution</th>
-                          <th>Examination</th>
-                          <th>Results</th>
-                          <th>Year</th>
-                        </tr>
-                        <tr>
-                          <td>Kolej Yayasan UEM</td>
-                          <td>A-LEVEL</td>
-                          <td><b>-</b></td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>SMK Bachok</td>
-                          <td>SPM</td>
-                          <td><b>9A+ 1A</b></td>
-                          <td>2021</td>
-                        </tr>
-                        <tr>
-                          <td>SMK Sri Nipah</td>
-                          <td>PT3</td>
-                          <td><b>7A 1B 1C</b></td>
-                          <td>2019</td>
-                        </tr>
-                        <tr>
-                          <td>SK Bachok</td>
-                          <td>UPSR</td>
-                          <td><b>1A 4B 1D</b></td>
-                          <td>2016</td>
-                        </tr>
-                      </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- EXPERIENCES / EDUCATION LATER
-<div class="page4">
-    <div class="container">
-        <div class="memberships">
-
-            <div class="member">
-                <div class="mem-title">Experience</div><br>
-                <div style="align-items: center;">
-            <table class="table_exp">
-              <tr>
-                <th>Institution</th>
-                <th>Position</th>
-                <th>Year</th>
-              </tr>
-              <tr>
-                <td>SMK Bachok</td>
-                <td>Head Student</td>
-                <td>2021-2022</td>
-              </tr>
-              <tr>
-                <td>SMK Bachok</td>
-                <td>President of Young Doctor's Club</td>
-                <td>2021-2022</td>
-              </tr>
-              <tr>
-                <td>SMK Bachok</td>
-                <td>President of KOR Kadet Polis</td>
-                <td>2021-2022</td>
-              </tr>
-              <tr>
-                <td>SMK Bachok</td>
-                <td>President of Volleyball Club</td>
-                <td>2021-2022</td>
-              </tr>
-            </table>
-                </div>
-            </div>
-
-            <div class="member">
-                <div class="mem-title">Education</div><br>
-                <div style="align-items: center;">
-                    <table class="table_exp">
-                        <tr>
-                          <th>Examination</th>
-                          <th>Results</th>
-                          <th>Year</th>
-                        </tr>
-                        <tr>
-                          <td>A-LEVEL</td>
-                          <td><b>-</b></td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>SPM</td>
-                          <td><b>9A+ 1A</b></td>
-                          <td>2021</td>
-                        </tr>
-                        <tr>
-                          <td>PT3</td>
-                          <td><b>7A 1B 1C</b></td>
-                          <td>2019</td>
-                        </tr>
-                        <tr>
-                          <td>UPSR</td>
-                          <td><b>1A 4B 1D</b></td>
-                          <td>2016</td>
-                        </tr>
-                      </table>
-                </div>
-            </div>
-
-        </div>
+    </div><!-- end photoSwipe background -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-</div>
--->
-
-    <div class="under">
-        <div class="container">
-            <div class="copy">Copyright © 2022</div>
-            <div class="sos-med">
-                <a href="https://www.facebook.com/mustaqim.burhanuddin" target="_blank">
-                    <div class="facebook"></div>
-                </a>
-                <a href="https://www.linkedin.com/in/mustaqim-burhanuddin-243513239/" target="_blank">
-                    <div class="linkedin"></div>
-                </a>
-                <a href="https://www.instagram.com/mxsqimmy_/" target="_blank">
-                    <div class="ig"></div>
-                </a>
-            </div>
-        </div>
-    </div>
-
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
