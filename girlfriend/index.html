@@ -4,26 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana's Section :)</title>
+    <title>My Love <3 </title>
+
 </head>
 <body>
-    <!-- BEATING HEART ANIMATION-->
-    <a href="info.html">
-        <div class="heart"></div>
-    </a>
+    <div class="text-center">
+
+        <!-- BEATING HEART ANIMATION-->
+        <a href="message.html">
+            <div class="heart"></div>
+        </a>
+        <p>Click Here!</p>
+
+    </div>
 
 </body>
 
 <!-- HEART CSS CODING -->
 <style>
+    /* 
+    BUYER can change
+    - Colour of Heart
+    - Size of Heart
+    - Speed of Heart Beat
+    - Colour / Gradient (Her Favourite Colours) /  Background image
+    */
+
     body {
         margin: 0;
         padding: 0;
         min-height: 100vh;   
-        background: #0b1522; 
+        /* 
+        background-color: ; 
+        background-image: url("");
+        */
+        background-image:  linear-gradient(rgb(228, 107, 107), rgb(101, 47, 123));
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    p {
+        color: rgb(255, 200, 0);
+        font-size: 20px;
+        transform: translate(-10%, 125%);
+        position:absolute;
+        animation: p 0.6s linear infinite;
+
+    }
+
+    @keyframes p{
+        0%{
+            transform: rotate(-20deg) scale(1.0);
+            transform: translate(-10%, 155%);
+
+        }
+        40%{
+            transform: rotate(-20deg) scale(1.07);
+        }
+
+        80%{
+            transform: rotate(25deg) scale(1.07);
+        }
+        100%{
+            transform: rotate(-20deg) scale(1.0);
+            transform: translate(-10%, 155%);
+
+        }
     }
 
     .heart {
@@ -57,7 +104,7 @@
     }
 
     .heart::after{
-        content: 'Clickk Here';
+        content: '';
         position: absolute;
         height: 70px;
         width: 70px;
@@ -66,6 +113,7 @@
         border-radius: 50px;  
         box-shadow: -10px 10px 90px #f20044;
     }
+
 </style>
 
 </html>
