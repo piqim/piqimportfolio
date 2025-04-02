@@ -7,9 +7,9 @@ const About = () => {
       <section id="about" className="text-center py-10">
         <h1 className="text-3xl font-bold text-gray-800">About</h1>
         <p className="mt-4 text-gray-600">
-          Mustaqim, also known as Piqim, a devoted first year Mathematics - Computer Science undergraduate student
-          at University of California, San Diego. My unwavering
-          passion for technology has fueled my ambition to pursue a career in
+          Mustaqim, also known as Piqim, a devoted first year undergraduate student studying Mathematics - Computer Science
+          at the University of California, San Diego under the Yayasan Khazanah Scholarship. My unwavering
+          passion for programming has fueled my ambition to pursue a career in
           the field of mathematics, and computer science. Not to mention, I love badminton, drawing, gaming, and socializing,
           so please don't hesitate to hit me up!
         </p>
@@ -114,7 +114,7 @@ const About = () => {
               </div>
 
               <div className="pt-10 flex justify-between">
-                <a className="text-blue-500 hover:text-blue-800 hover:underline" href="../src/assets/resume.pdf" download>Click here to download my CV!</a>
+                <a className="text-blue-500 hover:text-blue-800 hover:underline" href="https://piqimbucket.s3.ap-southeast-1.amazonaws.com/resume.pdf" download>Click here to download my CV!</a>
               </div>
             </div>
           </div>

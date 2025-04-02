@@ -5,25 +5,25 @@ const Contact = () => {
   const contactMethods = [
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/your-profile', // Update with your LinkedIn URL
+      url: 'https://www.linkedin.com/in/mustaqim-bin-burhanuddin-243513239/', // LinkedIn URL
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/your-profile', // Update with your Instagram URL
+      url: 'https://www.instagram.com/piqim_/', // Instagram URL
     },
     {
       name: 'Facebook',
-      url: 'https://www.facebook.com/your-profile', // Update with your Facebook URL
+      url: 'https://www.facebook.com/mustaqim.burhanuddin', // Facebook URL
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/your-username', // Update with your GitHub URL
+      url: 'https://github.com/piqim', // GitHub URL
 
     },
   ];
 
   return (
-    <div className="bg-[--color-light] py-10 px-4 md:px-10">
+    <section id="contact" className="bg-[--color-light] py-10 px-4 md:px-10">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Me</h1>
 
@@ -52,7 +52,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
