@@ -1,59 +1,68 @@
 // Portfolio.js
 import React from 'react';
+import keris from "../assets/img/portfolio/keris.jpg";
+import mysa from "../assets/img/portfolio/mysa.jpg";
+import yk from "../assets/img/portfolio/yk.jpg";
+import bruin from "../assets/img/portfolio/bruin.jpg";
+import webclass from "../assets/img/portfolio/webclass.jpg";
+import psg from "../assets/img/portfolio/psg.jpg";
+import muscom from "../assets/img/portfolio/muscom.jpg";
+import dikir from "../assets/img/portfolio/dikir.jpg";
+import spm from "../assets/img/portfolio/spm.jpg";
 
 const achievements = [
   {
     title: 'Kelantan Education Resource Initiative for Students (KERIS)',
     role: 'Founder and Co-Director',
-    image: '../src/assets/img/portfolio/keris.jpg',
+    image: keris,
     description: 'Photoshoot of Piqim, and the high commitee members',
   },
   {
     title: 'Malaysian Student Association (MYSA) @ UC San Diego',
     role: 'Treasurer',
-    image: '../src/assets/img/portfolio/mysa.jpg',
+    image: mysa,
     description: 'Informal photoshoot of Piqim and the MYSA commitee members during Eid Mubarak celebration with NIMSA.',
   },
   {
     title: 'Yayasan Khazanah Global Scholarship',
     role: 'Scholar',
-    image: '../src/assets/img/portfolio/yk.jpg',
+    image: yk,
     description: 'Piqim receiving the Yayasan Khazanah Global Scholarship during Awards Day 2022',
   },
   {
     title: 'Intercollege Badminton Tournament',
     role: 'Player',
-    image: '../src/assets/img/portfolio/bruin.jpg',
+    image: bruin,
     description: 'Piqim playing badminton at the 2024 Bruin Open, UCLA for UCSD',
   },
   {
     title: 'Web Development Class for Students',
     role: 'Instructor for the Class',
-    image: '../src/assets/img/portfolio/webclass.jpg',
+    image: webclass,
     description: 'Piqim posing in a photo with the students in the Web Development Class',
   },
   {
     title: 'Peer Support Group (PSG), KYUEM',
     role: 'Hicom Member',
-    image: '../src/assets/img/portfolio/psg.jpg',
+    image: psg,
     description: 'Piqim in a high commitee photoshoot as Peer Support Group`s 23/24 Multimedia Exco',
   },
   {
     title: 'MUSCOM KYUEM Outreach Camp',
     role: 'Participant of the Camp',
-    image: '../src/assets/img/portfolio/muscom.jpg',
+    image: muscom,
     description: 'Piqim participation\'s in Muscom Outreach Program',
   },
   {
     title: 'Malay Cultural Night 2023',
     role: 'Performer',
-    image: '../src/assets/img/portfolio/dikir.jpg',
+    image: dikir,
     description: 'Piqim participation in Malay Cultural Night for Dikir Barat',
   },
   {
     title: 'SMK Bachok Top Achiever Award',
     role: 'Highest SPM Result and Academic Reward',
-    image: '../src/assets/img/portfolio/spm.jpg',
+    image: spm,
     description: 'Piqim receiving highest SPM Results in high school history',
   },
 ];
