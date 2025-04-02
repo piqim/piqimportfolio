@@ -1,0 +1,57 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.12",
+    "@tiptap/extension-blockquote": "^2.11.6",
+    "@tiptap/extension-bold": "^2.11.6",
+    "@tiptap/extension-bullet-list": "^2.11.6",
+    "@tiptap/extension-heading": "^2.11.6",
+    "@tiptap/extension-image": "^2.11.6",
+    "@tiptap/extension-italic": "^2.11.6",
+    "@tiptap/extension-link": "^2.11.6",
+    "@tiptap/extension-list-item": "^2.11.6",
+    "@tiptap/extension-ordered-list": "^2.11.6",
+    "@tiptap/extension-table": "^2.11.7",
+    "@tiptap/extension-table-cell": "^2.11.7",
+    "@tiptap/extension-table-header": "^2.11.7",
+    "@tiptap/extension-table-row": "^2.11.7",
+    "@tiptap/pm": "^2.11.6",
+    "@tiptap/react": "^2.11.6",
+    "@tiptap/starter-kit": "^2.11.6",
+    "axios": "^1.8.4",
+    "dompurify": "^3.2.4",
+    "js-cookie": "^3.0.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/dompurify": "^3.0.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.3",
+    "react-router-dom": "^7.3.0",
+    "sass": "^1.85.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.2.0"
+  },
+  "bin": {
+    "tailwindcss": "lib/cli.js"
+  }
+}

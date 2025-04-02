@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== COLOR PALETTE ========== */
+:root {
+  --color-primary: #F16767;
+  --color-secondary: #A459D1;
+  --color-accent: #FFB84C;
+  --color-light: #F5EAEA;
+  --color-dark: #222222;
+  --color-text: #444444;
+  --color-highlight: #9DD8D2;
+}
+
+/* ========== TYPOGRAPHY ========== */
+:root {
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+}
+
+/* ======== Rich Text Editor ========= */
+.ProseMirror {
+  min-height: 200px;
+  padding: 1rem;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+.ProseMirror h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 2em;
+}
+
+.ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
+.ProseMirror blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1em;
+  color: #666;
+  font-style: italic;
+}
+
+/* ========== BASE STYLES ========== */
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  margin-top: 0;
+}
+
+p, dd, li {
+  font-family: var(--font-secondary);
+}
+
+dt {
+  font-family: var(--font-secondary);
+  font-size: 1.35em;
+}
+
+hr {
+  border: 0;
+  background-color: var(--color-highlight);
+}
+
+/* ========== COMPONENTS ========== */
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--color-primary);
+  color: var(--color-light);
+  transition: all 0.3s;
+}
+
+.back-to-top i:hover {
+  background: var(--color-secondary);
+}
+
+/* Buttons */
+.btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: var(--color-light);
+  background: var(--color-primary);
+  border: 2px solid var(--color-accent);
+}
+
+.btn-get-started:hover {
+  background: var(--color-secondary);
+  color: var(--color-light);
+  border-color: transparent;
+}
+
+.btn-learn-more {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: var(--color-light);
+  border: 2px solid var(--color-light);
+}
+
+.btn-learn-more:hover {
+  background: var(--color-highlight);
+  color: var(--color-dark);
+  border-color: transparent;
+}
+
+/* Header */
+#header {
+  z-index: 997;
+  transition: all 0.3s;
+  padding: 1em 0;
+  background-attachment: fixed;
+  background-image: url('../src/assets/img/bgimg.jpg');
+}
+
+.shadow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+#header .logo h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#header .logo h1 a {
+  color: var(--color-light);
+}
+
+#header .logo h1 a:hover {
+  color: var(--color-secondary);
+}
+
+/* Navigation */
+.nav-menu a {
+  color: var(--color-light);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  color: var(--color-secondary);
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 100%;
+  margin: 70px 0 0 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/hero-bg1.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+#hero h1 {
+  font-size: 5.5rem;
+  color: var(--color-primary);
+}
+
+#hero h2 {
+  color: var(--color-dark);
+  font-size: 1.5rem;
+}
+
+/* Sections */
+.section-title h2 {
+  font-size: 2rem;
+  position: relative;
+  color: var(--color-dark);
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--color-highlight);
+  display: inline-block;
+}
+
+/* About Section */
+.about {
+  background: linear-gradient(var(--color-accent), rgba(241, 103, 103, 0.9), rgba(245, 234, 234, 0.85)), url(../post-bg1.JPG);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.about .content h3,
+.about .content h5,
+.about .content p,
+.about .content ul li {
+  color: var(--color-light);
+}
+
+/* Features */
+.features .icon-box {
+  background: #f6f6f6;
+  transition: all 0.3s ease;
+}
+
+.features .icon-box:hover {
+  background: var(--color-secondary);
+  color: var(--color-light);
+}
+
+/* Testimonials */
+.testimonials .testimonial-item {
+  background: var(--color-light);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact */
+.contact .social-links a,
+.social-links a {
+  background: var(--color-light);
+  color: var(--color-accent);
+}
+
+.contact .social-links a:hover,
+.social-links a:hover {
+  background: var(--color-accent);
+  color: var(--color-light);
+}
+
+/* Footer */
+#footer {
+  background: var(--color-primary);
+  color: var(--color-light);
+}
+
+#footer .footer-links a:hover {
+  color: var(--color-secondary);
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  #hero h2 {
+    font-size: 1.125rem;
+  }
+  
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ========== UTILITY CLASSES ========== */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Table
+.table {
+  --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+    border-width: 1px;
+    margin: 1 rem;
+}
+.tr {
+  --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+.th {
+  padding: 0.5rem;
+  border-right-width: 1px;
+} */
+
+/* Note: I've kept the core structure but standardized colors and fonts.
+   You may need to adjust some specific components as needed for your design. */
