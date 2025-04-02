@@ -172,7 +172,9 @@ hr {
   transition: all 0.3s;
   padding: 1em 0;
   background-attachment: fixed;
-  background-image: url('https://piqimbucket.s3.ap-southeast-1.amazonaws.com/bgimg.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url('https://piqimbucket.s3.ap-southeast-1.amazonaws.com/bgimg2.jpg');
 }
 
 .shadow-overlay {

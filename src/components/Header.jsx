@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="left-0 right-0 min-h-screen flex items-start z-50 bg-[36%_49%] sm:bg-[37%_47%] md:bg-[40%_50%] lg:bg-[40%_49%] "
+      className="left-0 right-0 min-h-screen flex items-start z-50 bg-[36%_49%] sm:bg-[37%_47%] md:bg-[40%_50%] lg:bg-[40%_52%]"
     >
       <div className="shadow-overlay">
         <div className="md:flex justify-between md:mx-6 lg:mx-auto mx-4 lg:px-10 py-4 flex items-center">
