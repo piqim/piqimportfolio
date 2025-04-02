@@ -1,69 +1,62 @@
-// Portfolio.js
-import React from 'react';
-import keris from "../assets/img/portfolio/keris.jpg";
-import mysa from "../assets/img/portfolio/mysa.jpg";
-import yk from "../assets/img/portfolio/yk.jpg";
-import bruin from "../assets/img/portfolio/bruin.jpg";
-import webclass from "../assets/img/portfolio/webclass.jpg";
-import psg from "../assets/img/portfolio/psg.jpg";
-import muscom from "../assets/img/portfolio/muscom.jpg";
-import dikir from "../assets/img/portfolio/dikir.jpg";
-import spm from "../assets/img/portfolio/spm.jpg";
-
 const achievements = [
   {
-    title: 'Kelantan Education Resource Initiative for Students (KERIS)',
-    role: 'Founder and Co-Director',
-    image: keris,
-    description: 'Photoshoot of Piqim, and the high commitee members',
+    title: "Kelantan Education Resource Initiative for Students (KERIS)",
+    role: "Founder and Co-Director",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/keris.jpg',
+    description: "Photoshoot of Piqim, and the high commitee members",
   },
   {
-    title: 'Malaysian Student Association (MYSA) @ UC San Diego',
-    role: 'Treasurer',
-    image: mysa,
-    description: 'Informal photoshoot of Piqim and the MYSA commitee members during Eid Mubarak celebration with NIMSA.',
+    title: "Malaysian Student Association (MYSA) @ UC San Diego",
+    role: "Treasurer",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/mysa.jpg',
+    description:
+      "Informal photoshoot of Piqim and the MYSA commitee members during Eid Mubarak celebration with NIMSA.",
   },
   {
-    title: 'Yayasan Khazanah Global Scholarship',
-    role: 'Scholar',
-    image: yk,
-    description: 'Piqim receiving the Yayasan Khazanah Global Scholarship during Awards Day 2022',
+    title: "Yayasan Khazanah Global Scholarship",
+    role: "Scholar",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/yk.jpg',
+    description:
+      "Piqim receiving the Yayasan Khazanah Global Scholarship during Awards Day 2022",
   },
   {
-    title: 'Intercollege Badminton Tournament',
-    role: 'Player',
-    image: bruin,
-    description: 'Piqim playing badminton at the 2024 Bruin Open, UCLA for UCSD',
+    title: "Intercollege Badminton Tournament",
+    role: "Player",
+    image: 'https://piqimbucket.s3.amazonaws.com/bruin.jpg',
+    description:
+      "Piqim playing badminton at the 2024 Bruin Open, UCLA for UCSD",
   },
   {
-    title: 'Web Development Class for Students',
-    role: 'Instructor for the Class',
-    image: webclass,
-    description: 'Piqim posing in a photo with the students in the Web Development Class',
+    title: "Web Development Class for Students",
+    role: "Instructor for the Class",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/webclass.jpg',
+    description:
+      "Piqim posing in a photo with the students in the Web Development Class",
   },
   {
-    title: 'Peer Support Group (PSG), KYUEM',
-    role: 'Hicom Member',
-    image: psg,
-    description: 'Piqim in a high commitee photoshoot as Peer Support Group`s 23/24 Multimedia Exco',
+    title: "Peer Support Group (PSG), KYUEM",
+    role: "Hicom Member",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/psg.jpg',
+    description:
+      "Piqim in a high commitee photoshoot as Peer Support Group`s 23/24 Multimedia Exco",
   },
   {
-    title: 'MUSCOM KYUEM Outreach Camp',
-    role: 'Participant of the Camp',
-    image: muscom,
-    description: 'Piqim participation\'s in Muscom Outreach Program',
+    title: "MUSCOM KYUEM Outreach Camp",
+    role: "Participant of the Camp",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/muscom.jpg',
+    description: "Piqim participation's in Muscom Outreach Program",
   },
   {
-    title: 'Malay Cultural Night 2023',
-    role: 'Performer',
-    image: dikir,
-    description: 'Piqim participation in Malay Cultural Night for Dikir Barat',
+    title: "Malay Cultural Night 2023",
+    role: "Performer",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/dikir.jpg',
+    description: "Piqim participation in Malay Cultural Night for Dikir Barat",
   },
   {
-    title: 'SMK Bachok Top Achiever Award',
-    role: 'Highest SPM Result and Academic Reward',
-    image: spm,
-    description: 'Piqim receiving highest SPM Results in high school history',
+    title: "SMK Bachok Top Achiever Award",
+    role: "Highest SPM Result and Academic Reward",
+    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/spm.jpg',
+    description: "Piqim receiving highest SPM Results in high school history",
   },
 ];
 
@@ -71,9 +64,15 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="bg-[--color-light] py-10 px-4 md:px-10">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Portfolio</h1>
+        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+          Portfolio
+        </h1>
         <p className="text-lg text-center text-gray-600 mb-12">
-          There are a handful of achievements, awards, and fun activities that I'm quite proud of. In the future, I do sincerely hope I get more daring opportunities to deepen my knowledge and gain more experience. With that said, I've compiled them all as part of my portfolio so that you can experience them too!
+          There are a handful of achievements, awards, and fun activities that
+          I'm quite proud of. In the future, I do sincerely hope I get more
+          daring opportunities to deepen my knowledge and gain more experience.
+          With that said, I've compiled them all as part of my portfolio so that
+          you can experience them too!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -87,9 +86,13 @@ const Portfolio = () => {
                 alt={achievement.title}
                 className="w-full h-40 object-cover rounded-t-lg mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-800">{achievement.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-800">
+                {achievement.title}
+              </h3>
               <p className="text-sm text-gray-600">{achievement.description}</p>
-              <p className="mt-2 text-sm font-medium text-gray-700">{achievement.role}</p>
+              <p className="mt-2 text-sm font-medium text-gray-700">
+                {achievement.role}
+              </p>
             </div>
           ))}
         </div>
