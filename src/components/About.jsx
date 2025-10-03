@@ -114,7 +114,7 @@ const About = () => {
               </div>
 
               <div className="pt-10 flex justify-between">
-                <a className="text-blue-500 hover:text-blue-800 hover:underline" href="https://piqimbucket.s3.ap-southeast-1.amazonaws.com/resume.pdf" download>Click here to download my CV!</a>
+                <a className="text-blue-500 hover:text-blue-800 hover:underline" href="https://drive.google.com/file/d/1wLxWeag6eRlY3F9eq-1vX94mjjHSKtHj/view?usp=sharing">Click here to see my CV!</a>
               </div>
             </div>
           </div>
