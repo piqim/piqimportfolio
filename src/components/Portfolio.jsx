@@ -1,71 +1,108 @@
 const achievements = [
   {
     title: "Kelantan Education Resource Initiative for Students (KERIS)",
-    role: "Founder and Co-Director",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/keris.jpg',
-    description: "Photoshoot of Piqim, and the high commitee members",
-  },
+    role: "Co-Founder, Advisor & Former Co-Director",
+    image: "https://piqimbucket.s3.ap-southeast-1.amazonaws.com/keris.jpg",
+    description:
+      "Co-founded, advised and led an organization focused on scholarship exposure for rural Kelantan students, launching an annual Mock Interview program.",
+    date: "April 2023 - Present"
+    },
   {
-    title: "Malaysian Student Association (MYSA) @ UC San Diego",
+    title: "Engineers Without Borders (EWB) @ UCSD",
+    role: "Project Co-Lead",
+    image: "",
+    description:
+      "Led a team for a project, Project K–12, that promote STEM, and engineering workshops across San Diego County especially for underrepresented minorities in San Diego.",
+    date: "January 2026 - Present"
+    },
+  {
+    title: "Association for Computing Machinery (ACM) - Hack @ UCSD",
+    role: "Mentor Developer",
+    image: "",
+    description:
+      "Mentored students in a quarter-long full-stack mobile development bootcamp covering JavaScript, React, Next.js, Express, and Vercel, with guidance.",
+    date: "October 2025 - December 2025"
+    },
+    {
+    title: "Badminton Varsity Team @ Mount Carmel High School, San Diego",
+    role: "Assistant Coach",
+    image: "",
+    description:
+    "Assisted the head coach in coaching varsity players for the 26/27 season in the local San Diego County division with drills, strategic planning, and match analysis.",
+    date: "February 2026 - Current"
+    },
+  {
+    title: "Malaysian Student Association (MYSA) @ UCSD",
     role: "Treasurer",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/mysa.jpg',
+    image: "https://piqimbucket.s3.ap-southeast-1.amazonaws.com/mysa.jpg",
     description:
-      "Informal photoshoot of Piqim and the MYSA commitee members during Eid Mubarak celebration with NIMSA.",
+      "Managed budgeting and financial planning and oversaw resource allocation for events targeting Malaysian student community.",
+    date: "March 2025 - February 2026"
   },
   {
-    title: "Yayasan Khazanah Global Scholarship",
-    role: "Scholar",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/yk.jpg',
+    title: "The Food Cooperative @ UCSD",
+    role: "Volunteer Finance Staff",
+    image: "",
     description:
-      "Piqim receiving the Yayasan Khazanah Global Scholarship during Awards Day 2022",
-  },
+      "Handled point-of-sale operations, transaction records, and sales tax compliance while organizing financial data for a student-run cooperative.",
+    date: "April 2025 - October 2025"
+    },
   {
-    title: "Intercollege Badminton Tournament",
-    role: "Player",
-    image: 'https://piqimbucket.s3.amazonaws.com/bruin.jpg',
+    title: "Peer Support Group (PSG) @ KYUEM",
+    role: "Multimedia Executive Committee",
+    image: "https://piqimbucket.s3.ap-southeast-1.amazonaws.com/psg.jpg",
     description:
-      "Piqim playing badminton at the 2024 Bruin Open, UCLA for UCSD",
+      "Produced digital media and communications materials for peer mental health support initiatives and student engagement.",
+    date: "June 2023 - May 2024",
   },
   {
-    title: "Web Development Class for Students",
-    role: "Instructor for the Class",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/webclass.jpg',
+    title: "UCSD Badminton Club @ UCSD",
+    role: "Team Player",
+    image: "https://piqimbucket.s3.amazonaws.com/bruin.jpg",
     description:
-      "Piqim posing in a photo with the students in the Web Development Class",
-  },
+      "Represented UC San Diego in intercollegiate badminton competitions and tournaments (UCLA Bruin Open 2024, UCI Anteater Open (2025), UCSD Sun God Open (2025), etc).",
+    date: "October 2024 - June 2025",
+    },
   {
-    title: "Peer Support Group (PSG), KYUEM",
-    role: "Hicom Member",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/psg.jpg',
+    title: "KY Badminton (KYBAD) @ KYUEM",
+    role: "Team Player",
+    image: "",
     description:
-      "Piqim in a high commitee photoshoot as Peer Support Group`s 23/24 Multimedia Exco",
+      "Competed in intercollege badminton tournaments as part of KYUEM’s varsity badminton team.",
+    date: "January 2023 - June 2024",
   },
   {
-    title: "MUSCOM KYUEM Outreach Camp",
-    role: "Participant of the Camp",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/muscom.jpg',
-    description: "Piqim participation's in Muscom Outreach Program",
+    title: "KY Computing Society @ KYUEM",
+    role: "Volunteer Instructor",
+    image: "https://piqimbucket.s3.ap-southeast-1.amazonaws.com/webclass.jpg",
+    description:
+      "Taught introductory web development to a class of 20 students, covering HTML, CSS, and JavaScript fundamentals.",
+    date: "September 2022 - November 2022",
   },
   {
-    title: "Malay Cultural Night 2023",
-    role: "Performer",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/dikir.jpg',
-    description: "Piqim participation in Malay Cultural Night for Dikir Barat",
+    title: "Yayasan Khazanah Global Scholarship Award",
+    role: "Scholarship Recipient",
+    image: "https://piqimbucket.s3.ap-southeast-1.amazonaws.com/yk.jpg",
+    description:
+      "Awarded a competitive global scholarship in recognition of academic excellence and leadership.",
+      date: "August 2022",
   },
   {
-    title: "SMK Bachok Top Achiever Award",
-    role: "Highest SPM Result and Academic Reward",
-    image: 'https://piqimbucket.s3.ap-southeast-1.amazonaws.com/spm.jpg',
-    description: "Piqim receiving highest SPM Results in high school history",
+    title: "Academic Top Achiever Award @ SMK Bachok (Highschool)",
+    role: "Highest SPM Result and Academic Award",
+    image: "https://piqimbucket.s3.ap-southeast-1.amazonaws.com/spm.jpg",
+    description:
+      "Received recognition for achieving the highest SPM result in school history.",
+      date: "December 2021",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="bg-[--color-light] py-10 px-4 md:px-10">
+    <section id="portfolio" className="bg-white py-10 px-4 md:px-10">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Portfolio
+          Clubs, Sports, and Awards Portfolio
         </h1>
         <p className="text-lg text-center text-gray-600 mb-12">
           There are a handful of achievements, awards, and fun activities that
@@ -92,6 +129,11 @@ const Portfolio = () => {
               <p className="text-sm text-gray-600">{achievement.description}</p>
               <p className="mt-2 text-sm font-medium text-gray-700">
                 {achievement.role}
+              </p>
+              <p>
+                {achievement.date && (
+                  <span className="text-sm text-gray-500">{achievement.date}</span>
+                )}
               </p>
             </div>
           ))}

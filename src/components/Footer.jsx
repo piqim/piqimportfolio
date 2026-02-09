@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="w-full text-center">
             <div className="copyright">
-              &copy; Copyright 2025 <strong>PIQIM</strong>. All Rights Reserved
+              &copy; Copyright 2026 <strong>PIQIM</strong>. All Rights Reserved
             </div>
           </div>
           {/* Footer Links */}

@@ -3,60 +3,51 @@ import React from "react";
 
 const projects = [
   {
-    title: "KERIS Official Webapp",
+    title: "Modeling Calorie Burn in Gym-Based Exercise Sessions",
+    date: "January 2026",
+    description:
+      "Built an R analytics pipeline and interactive Shiny app for exploratory and inferential analysis of gym activity data from 973 users.",
+    link: "https://piqim.shinyapps.io",
+    linkText: "View App",
+  },
+  {
+    title: "Malaysian Condominium Price Predictive Model",
+    date: "February 2026",
+    description:
+      "Performed descriptive analysis on web-crawled housing data and built a predictive model to analyze and forecast condominium prices in Malaysia.",
+    link: "https://website.com",
+    linkText: "View App",
+  },
+  {
+    title: "Project Feeling Prepper – Mental Health Support App",
+    date: "October 2025",
+    description:
+      "Developed a full-stack MERN web and mobile app to support mental health management using structured therapy methods and progress tracking.",
+    link: "https://projectfeelingprepper.vercel.app/",
+    linkText: "Visit App",
+  },
+  {
+    title: "Scholarship Repository Website – KERIS Official Website",
     date: "March 2025",
     description:
-      "Designed, coded and published the official webapp using MERN Stack for Kelantan Educational Resource Initiative for Students. The website provides information regarding scholarships that is targeted towards deserving post-SPM students in Kelantan.",
-    link: "https://github.com/piqim/kerisfullstack", // Update this with actual link
-    linkText: "Cat Call the Site",
+      "Built a MERN-based platform featuring a searchable mentor directory and scholarship database to support student academic decision-making.",
+    link: "https://kerismy.com",
+    linkText: "Visit Site",
   },
   {
-    title: "Academic Drive Access Point",
-    date: "June 2023",
-    description:
-      "Made a simple access point for KYUEM students to access a Google Drive folder that contains resources to assist them for A-Levels.",
-    link: "https://ky-acad.netlify.app/", // Update this with actual link
-    linkText: "Take a Peek",
-  },
-  {
-    title: "College Student Council Website",
-    date: "March 2023",
-    description:
-      "Designed and coded a fully dynamic web system for the college's student council as a mock-up and demo.",
-    link: "https://github.com/piqim/kysc", // Update this with actual link
-    linkText: "Source Code",
-  },
-  {
-    title: "KYUEM Computing Society Website",
-    date: "February 2023",
-    description:
-      "Made a simple demo website for the College Computing society.",
-    link: "https://piqim.github.io/kycs/", // Update this with actual link
-    linkText: "Check it Out",
-  },
-
-  {
-    title: "Kyuem Noticias Website",
+    title: "Noticias (Journalism Club) News Website",
     date: "December 2022",
     description:
-      "Coded a fully dynamic news website for the college's Journalism club using MySQL, HTML, PHP and other languages to make it fully functional.",
-    link: "https://github.com/piqim/kynews", // Update this with actual link
+      "Created a dynamic news website for a college journalism club using MySQL, HTML, and PHP.",
+    link: "https://github.com/piqim/kynews",
     linkText: "Source Code",
-  },
-  {
-    title: "BASE Website",
-    date: "December 2022",
-    description:
-      "This website was originally created by Irfan Ezani for BASE Initiative, I work as the current IT Officer to further improve the website.",
-    link: "https://baseinitiativemy.com/", // Update this with actual link
-    linkText: "Visit the Site",
   },
 ];
 
 const Projects = () => {
   return (
     <section id="projects">
-      <div className="bg-white py-10 px-4 md:px-10">
+      <div className="bg-[--color-light] py-10 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
             Projects
@@ -64,11 +55,10 @@ const Projects = () => {
           <p className="text-lg text-center text-gray-600 mb-12">
             Though I've had my stints with Badminton, Scholarship preaching, and
             many more, I never forget to practice, learn, and improve on my
-            coding prowess. I've done a number of personal and work-related
-            projects, you are more than welcome to check them out!
+            coding prowess. This collection of personal and commissioned projects spans data analytics, machine learning, and full-stack web development. It includes predictive modeling and statistical analysis in R, MERN-based web and mobile applications, and dynamic database-driven websites, focused on real-world domains such as health, education, housing, and journalism.
           </p>
 
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -92,6 +82,8 @@ const Projects = () => {
               </div>
             ))}
           </div>
+
+          <p className="text-center text-gray-600 mt-8">--- <a href="https://github.com/piqim" className="hover:text-blue-700">Click here to see more on my GitHub Profile</a> ---</p>
         </div>
       </div>
     </section>

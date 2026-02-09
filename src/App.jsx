@@ -11,8 +11,8 @@ const App = () => {
     <div className="w-full">
       <Header />
       <About />
-      <Portfolio/>
       <Projects/>
+      <Portfolio/>
       <Contact/>
       <Footer />
     </div>

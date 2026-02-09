@@ -35,14 +35,14 @@ export default function Header() {
                 <li>
                   <a href="#about" className="hover:text-opacity-80 transition">A B O U T</a>
                 </li>
-
+<li>
+                  <a href="#projects" className="hover:text-opacity-80 transition">P R O J E C T S</a>
+                </li>
                 <li>
                   <a href="#portfolio" className="hover:text-opacity-80 transition">P O R T F O L I O</a>
                 </li>
 
-                <li>
-                  <a href="#projects" className="hover:text-opacity-80 transition">P R O J E C T S</a>
-                </li>
+                
 
                 <li>
                   <a href="#contact" className="hover:text-opacity-80 transition">C O N T A C T</a>
