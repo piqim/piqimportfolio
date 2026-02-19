@@ -24,6 +24,14 @@ const achievements = [
     date: "October 2025 - December 2025"
     },
     {
+    title: "Triton Web Developers (TWD) @ UCSD",
+    role: "Project Lead Developer",
+    image: "",
+    description:
+      "Worked as the main lead developer and project lead to facilitate, and connect with interested clubs and organizations, and further devised visions for the project, including framework utilization, UI/UX direction, content quality inspection, etc.",
+    date: "February 2026 - Current"
+    },
+    {
     title: "Badminton Varsity Team @ Mount Carmel High School, San Diego",
     role: "Assistant Coach",
     image: "",
@@ -118,11 +126,6 @@ const Portfolio = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img
-                src={achievement.image}
-                alt={achievement.title}
-                className="w-full h-40 object-cover rounded-t-lg mb-4"
-              />
               <h3 className="text-xl font-semibold text-gray-800">
                 {achievement.title}
               </h3>

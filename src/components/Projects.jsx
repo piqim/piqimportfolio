@@ -19,10 +19,18 @@ const projects = [
     linkText: "View App",
   },
   {
+    title: "Men-Tigo When – Meniere's Induced Vertigo ML Predictive Model",
+    date: "October 2025",
+    description:
+      "\"Men-Tigo When\" is a project on a data-focused Machine Learning predictive model integrated web mobile app designed to predict vertigo attacks in patients suffering from Meniere's disease. For my love, Jaynie. ***UPDATE: The app is in early development phase",
+    link: "https://github.com/piqim/men-tigo-when",
+    linkText: "Visit Repository",
+  },
+  {
     title: "Project Feeling Prepper – Mental Health Support App",
     date: "October 2025",
     description:
-      "Developed a full-stack MERN web and mobile app to support mental health management using structured therapy methods and progress tracking.",
+      "Developed a full-stack MERN web and mobile app to support mental health management using structured therapy methods and progress tracking. ***UPDATE: The app is currently enroute to the app store, and is currently only available on web.***",
     link: "https://projectfeelingprepper.vercel.app/",
     linkText: "Visit App",
   },
